@@ -1,16 +1,22 @@
 package lombok;
 
-//import lombok.Getter;
-//import lombok.NoArgsConstructor;
-//import lombok.Setter;
-//import lombok.ToString;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-//@NoArgsConstructor
-//@AllArgsConstructor
-//@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class EmployeeWithLombok {
-  //  private @Getter @Setter Integer employeeId;
-    //private @Getter @Setter String name;
-    //private @Getter @Setter String company;
-    //private @Getter @Setter String emailId;
+  private @Getter @Setter Integer employeeId;
+  private @Getter @Setter String name;
+  private @Getter @Setter String company;
+  private @Getter @Setter String emailId;
+
+  public static void main(String[] args) {
+    EmployeeWithLombok employee = new EmployeeWithLombok(12752, "Arybhat R",
+            "Oracle", "xyz@gmail.com");
+    System.out.print(employee);
+  }
 }
